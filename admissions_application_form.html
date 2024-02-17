@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+
+    <style>                
+        .hidden{    
+            display: none;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <form>
+        <div id="page 1">
+
+            <h1>Program and Basic Details</h1>
+            
+                <h2>Program Details</h2>
+
+                <label for="dsc">Discipline:</label>
+                <select name="dsc">
+                    <option>PhD</option>
+                </select>
+
+                <label for="stream">Stream:</label>
+                <select name="stream">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+
+                <label for="pgnm">Program Name:</label>
+                <input type="text" name="pgnm" id="pgnm">
+                <br><br>
+
+                <label for="mode">Mode of Registeration:</label>
+                <select name="mode">
+                    <option value="ftime">Full-Time</option>
+                    <option value="ptimeint">Part-Time Internal</option>
+                    <option value="ptimeext">Part-Time External</option>
+                </select>
+
+                <label for="mindur">Minimum Duration:</label>
+                <input type="text" name="mindur" id="mindur">
+                <br>
+                <h5>Full-Time Candidates are not eligible to change their candidature in part time for 3 years from the date of registeration.</h5>
+
+            
+
+
+            
+                <h2>Personal Details</h2>
+                <label for="title">Title:</label>
+                <select name="title" id="title">
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="mrs">Mrs.</option>
+                </select>
+                
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname">
+    
+                <label for="mname">Middle Name:</label>
+                <input type="text" name="mname" id="mname">
+    
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname">
+                <br> <br>
+    
+                <label for="email">Student Email ID:</label>
+                <input type="text" name="email" id="email">
+    
+                <label for="gemail">Guardian Email ID:</label>
+                <input type="text" name="gemail" id="gemail">
+    
+                <label for="phno">Mobile Number:</label>
+                <input type="text" name="phno" id="phno">
+                <br><br>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob">
+                
+    
+                <label for="bgrp">Blood Group:</label>
+                <select name="bgrp" id="bgrp">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option> 
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                
+                <label for="gender">Gender:</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="fmale">Female</option>
+                    <option value="otr">Others</option>
+                </select>
+                
+                <label for="religion">Religion:</label>
+                <input type="text" name="religion" id="religion">
+    
+                <label for="rsd">J&K Resident:</label>
+                <select name="rsd">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option> 
+                </select>
+                <br><br>
+
+                <label for="Nationality">Nationality:</label>
+                <input type="text" name="Nationality" id="Nationality">
+    
+                <label for="Caste Category">Caste Category:</label>
+                <input type="text" name="Caste Category" id="Caste Category">
+                <br><br>
+    
+                <label for="Adhaar">Adhaar Number:</label>
+                <input type="text" name="Adhaar" id="Adhaar">
+    
+                <label for="diffab">Are You Differntly Abled?:</label>
+                <select name="diffab">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>  
+                </select>
+    
+                
+            
+
+            
+                <h2>Passport Details</h2>
+
+                <label for="pssno">Passport Number:</label>
+                <input type="text" name="pssno" id="pssno">
+
+                <label for="psscnt">Country:</label>
+                <input type="text" name="psscnt" id="psscnt">
+
+                <label for="psspoi">Place of Issue:</label>
+                <input type="text" name="psspoi" id="psspoi">
+                <br><br>
+
+                <label for="pssdoi">Date of Issue:</label>
+                <input type="date" name="pssdoi" id="pssdoi">
+
+                <label for="pssdoe">Date of Expiry:</label>
+                <input type="date" name="pssdoe" id="pssdoe">
+
+
+            
+    
+    
+        
+
+            <br><br><br><br>
+
+        
+            <h1>Parents Details</h1>
+            <h2>Father's Details</h2>
+
+            <label for="fname">Father's Name:</label>
+            <input type="text" name="fname" id="fname">
+
+            <label for="fphno">Father's Mobile Number:</label>
+            <input type="text" name="fphno" id="fphno">
+
+            <label for="fmail">Father's Email ID:</label>
+            <input type="text" name="fmail" id="fmail">
+            <br><br>
+
+            <label for="focc">Father's Occupation:</label>
+            <input type="text" name="focc" id="focc">
+
+            <label for="fdes">Father's Designation:</label>
+            <input type="text" name="fdes" id="fdes">
+
+            <label for="inc">Total Parental Income(in Lakhs):</label>
+            <input type="number" name="inc" id="inc">
+            <br><br>
+
+            <h2>Mother's Details</h2>
+
+            <label for="mname">Mother's Name:</label>
+            <input type="text" name="mname" id="mname">
+
+            <label for="mphno">Mother's Mobile Number:</label>
+            <input type="text" name="mphno" id="mphno">
+
+            <label for="mmail">Mother's Email ID:</label>
+            <input type="text" name="mmail" id="mmail">
+            <br><br>
+
+            <label for="mocc">Mother's Occupation:</label>
+            <input type="text" name="mocc" id="mocc">
+
+            <label for="mdes">Mother's Designation:</label>
+            <input type="text" name="mdes" id="mdes">
+
+
+
+        
+            <br><br><br><br>
+
+        
+            <h1>Addres Details</h1>
+
+            
+                <h2>Address for Correspondence</h2>
+
+                <label for="Country">Country:</label>
+                <input type="text" name="Country" id="Country">
+
+                <label for="State">State:</label>
+                <input type="text" name="State" id="State">
+
+                <label for="District">District:</label>
+                <input type="text" name="District" id="District">
+            
+
+                <label for="City">City:</label>
+                <input type="text" name="City" id="City">
+                <br><br>
+
+                <label for="adln1">Address Line 1:</label>
+                <input type="text" name="adln1" id="adln1">
+
+                <label for="adln2">Address Line 2:</label>
+                <input type="text" name="adln2" id="adln2">
+
+                <label for="pcode">PinCode:</label>
+                <input type="text" name="pcode" id="pcode">
+                <br><br>
+
+                <label for="peradd">Is Permanant Address Same as Address for Correspondence:</label>
+                <select name="permadd">
+                    <option value="ys">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+            
+                <h2>Permanant Address</h2>
+                <label for="Country">Country:</label>
+                <input type="text" name="Country" id="Country">
+
+                <label for="State">State:</label>
+                <input type="text" name="State" id="State">
+
+                <label for="District">District:</label>
+                <input type="text" name="District" id="District">
+            
+
+                <label for="City">City:</label>
+                <input type="text" name="City" id="City">
+                <br><br>
+
+                <label for="adln1">Address Line 1:</label>
+                <input type="text" name="adln1" id="adln1">
+
+                <label for="adln2">Address Line 2:</label>
+                <input type="text" name="adln2" id="adln2">
+
+                <label for="pcode">PinCode:</label>
+                <input type="text" name="pcode" id="pcode">
+                <br><br>
+
+                <button type="button" onclick="nextPage(1)">Next</button>
+                <br><br><br>
+        </div>
+        
+        
+        <div id="page 2" class="hidden">
+            <h1>Educational Details</h1>
+            <div > <!--School details-->
+                <h2>School Details</h2>
+                <h3>Class X</h3>
+
+                <label for="schnm1">Name of Institution:</label>
+                <input type="text" name="schnm1" id="schnm1">
+
+                <label for="roll1">Roll Number:</label>
+                <input type="text" name="roll1" id="roll1">
+
+                <label for="board1">Board:</label>
+                <select name="board1">
+                    <option val="">ABCD</option>
+                    <option val="">EFGH</option>
+                    <option val="">IJKL</option>
+                </select>
+                <br><br>
+
+                <label for="mrksch1">Marking Scheme:</label>
+                <select name="mrksch1">
+                    <option val="cgpa">CGPA out of 10</option>
+                    <option val="percentage">Percentage</option>
+                </select>
+
+                <label for="maxmark1">Maximum Marks:</label>
+                <input type="number" name="maxmark1" id="maxmark1">
+
+                <label for="obtmark1">Obtained Marks:</label>
+                <input type="number" name="obtmark1" id="obtmark1">
+
+                <label for="obtcg1">Obtained CGPA/Percentage:</label>
+                <input type="number" name="obtcg1" id="obtcg1">
+
+
+                <h3>Class XII</h3>
+
+                <label for="schnm2">Name of Institution:</label>
+                <input type="text" name="schnm2" id="schnm2">
+
+                <label for="roll2">Roll Number:</label>
+                <input type="text" name="roll2" id="roll2">
+
+                <label for="board2">Board:</label>
+                <select name="board2">
+                    <option val="">ABCD</option>
+                    <option val="">EFGH</option>
+                    <option val="">IJKL</option>
+                </select>
+                <br><br>
+
+                <label for="mrksch2">Marking Scheme:</label>
+                <select name="mrksch2">
+                    <option val="cgpa">CGPA out of 10</option>
+                    <option val="percentage">Percentage</option>
+                </select>
+
+                <label for="maxmark2">Maximum Marks:</label>
+                <input type="number" name="maxmark2" id="maxmark2">
+
+                <label for="obtmark2">Obtained Marks:</label>
+                <input type="number" name="obtmark2" id="obtmark2">
+
+                <label for="obtcg2">Obtained CGPA/Percentage:</label>
+                <input type="number" name="obtcg2" id="obtcg2">
+                <br><br>
+
+                <label for="diploma">Have you done diploma?</label>
+                <select name="diploma">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>
+                </select>
+
+            </div>
+
+            <div> <!--Diploma Details-->
+                <h2>Diploma Details</h2>
+                <label for="dipinst">Name of Institution:</label>
+                <input type="text" name="dipinst" id="dipinst">
+
+                <label for="regd">Registeration Number:</label>
+                <input type="text" name="regd" id="regd">
+
+                <label for="streamd">Stream:</label>
+                <input type="text" name="streamd" id="streamd">
+
+                <label for="yrdip">Year of Passing:</label>
+                <input type="number" name="yrdip" id="yrdip">
+                <br><br>
+
+                <label for="mrkschd">Marking Scheme:</label>
+                <select name="mrkschd">
+                    <option val="cgpa">CGPA out of 10</option>
+                    <option val="percentage">Percentage</option>
+                </select>
+
+                <label for="maxmarkd">Maximum Marks:</label>
+                <input type="number" name="maxmarkd" id="maxmarkd">
+
+                <label for="obtmarkd">Obtained Marks:</label>
+                <input type="number" name="obtmarkd" id="obtmarkd">
+
+                <label for="obtcgd">Obtained CGPA/Percentage:</label>
+                <input type="number" name="obtcgd" id="obtcgd">
+
+
+            </div>
+
+            <div> <!--UG Details-->
+                <h2>Under-Graduate Details</h2>
+                <label for="uginst">Name of Institution:</label>
+                <input type="text" name="uginst" id="uginst">
+
+                <label for="regug">Registeration Number:</label>
+                <input type="text" name="regug" id="regug">
+
+                <label for="streamug">Stream:</label>
+                <input type="text" name="streamug" id="streamug">
+
+                <label for="yrug">Year of Passing:</label>
+                <input type="number" name="yrdug" id="yrdug">
+                <br><br>
+
+                <label for="mrkschug">Marking Scheme:</label>
+                <select name="mrkschug">
+                    <option val="cgpa">CGPA out of 10</option>
+                    <option val="percentage">Percentage</option>
+                </select>
+
+                <label for="maxmarkug">Maximum Marks:</label>
+                <input type="number" name="maxmarkug" id="maxmarkug">
+
+                <label for="obtmarkug">Obtained Marks:</label>
+                <input type="number" name="obtmarkug" id="obtmarkug">
+
+                <label for="obtcgug">Obtained CGPA/Percentage:</label>
+                <input type="number" name="obtcgug" id="obtcgug">
+
+
+            </div>
+
+            <div> <!--PG Details-->
+                <h2>Post-Graduate Details</h2>
+                <label for="pginst">Name of Institution:</label>
+                <input type="text" name="pginst" id="pginst">
+
+                <label for="regpg">Registeration Number:</label>
+                <input type="text" name="regpg" id="regpg">
+
+                <label for="streampg">Stream:</label>
+                <input type="text" name="streampg" id="streampg">
+
+                <label for="yrpg">Year of Passing:</label>
+                <input type="number" name="yrdpg" id="yrdpg">
+
+                <label for="resultpg">Result Status:</label>
+                <select name="resultpg">
+                    <option val="awa">Awaited</option>
+                    <option val="dec">Declared</option>
+                </select>
+                <br><br>
+
+                <label for="mrkschpg">Marking Scheme:</label>
+                <select name="mrkschpg">
+                    <option val="cgpa">CGPA out of 10</option>
+                    <option val="percentage">Percentage</option>
+                </select>
+
+                <label for="maxmarkpg">Maximum Marks:</label>
+                <input type="number" name="maxmarkpg" id="maxmarkpg">
+
+                <label for="obtmarkpg">Obtained Marks:</label>
+                <input type="number" name="obtmarkpg" id="obtmarkpg">
+
+                <label for="obtcgpg">Obtained CGPA/Percentage:</label>
+                <input type="number" name="obtcgpg" id="obtcgpg">
+
+                <br><br>
+
+                <label for="mphil">Wheather Qualified for MPhil?</label>
+                <select name="mphil">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>
+                </select>
+
+
+            </div>
+
+
+            <div> <!--Mphil Details-->
+
+
+                <h2>MPhil Details</h2>
+                <label for="mpinst">Name of Institution:</label>
+                <input type="text" name="mpinst" id="mpinst">
+
+                <label for="regmp">Registeration Number:</label>
+                <input type="text" name="regmp" id="regmp">
+
+                <label for="streammp">Stream:</label>
+                <input type="text" name="streammp" id="streammp">
+
+                <label for="yrdmp">Year of Passing:</label>
+                <input type="number" name="yrdmp" id="yrdmp">
+
+                <label for="resultmp">Result Status:</label>
+                <select name="resultmp">
+                    <option val="awa">Awaited</option>
+                    <option val="dec">Declared</option>
+                </select>
+                <br><br>
+
+                <label for="mrkschmp">Marking Scheme:</label>
+                <select name="mrkschmp">
+                    <option val="cgpa">CGPA out of 10</option>
+                    <option val="percentage">Percentage</option>
+                </select>
+
+                <label for="maxmarkmp">Maximum Marks:</label>
+                <input type="number" name="maxmarkmp" id="maxmarkmp">
+
+                <label for="obtmarkmp">Obtained Marks:</label>
+                <input type="number" name="obtmarkmp" id="obtmarkmp">
+
+                <label for="obtcgmp">Obtained CGPA/Percentage:</label>
+                <input type="number" name="obtcgmp" id="obtcgmp">
+                <br><br>
+
+                <label for="govt">Currently working as govt-assistant professor?</label>
+                <select name="govt">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>
+                </select>
+
+
+            </div>
+
+            
+            <button type="button" onclick="prevPage(2)">Previous</button>
+            <button type="button" onclick="nextPage(2)">Next</button>
+            <br><br><br>
+        </div>
+        
+
+        <div id="page 3" class="hidden">
+            <h1>Qualification Exams</h1>
+
+            <!--NET details-->
+            <label for="net">Have you taken Qualification exam of NET?</label>
+                <select name="net">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>
+                </select>
+                <br>
+            
+            <div> 
+                <h3>NET Details</h3>
+                <label for="yrnet">Year of Passing:</label>
+                <input type="number" name="yrnet" id="yrnet">
+
+                <label for="regnet">Registeration Number:</label>
+                <input type="text" name="regnet" id="regnet">
+
+                <label for="resultnet">Result Status:</label>
+                <select name="resultnet">
+                    <option val="awa">Awaited</option>
+                    <option val="dec">Declared</option>
+                </select>
+
+                <label for="subnet">Subject:</label>
+                <input type="text" name="subnet" id="subnet">
+                <br><br>
+
+                <label for="rnknet">Rank:</label>
+                <input type="number" name="rnknet" id="rnknet">
+
+                <label for="awdnet">Award Agenncy:</label>
+                <input type="text" name="awdnet" id="awdnet">
+                <br><br><br>
+
+            </div>
+
+            <!--SET details-->
+            <label for="set">Have you taken Qualification exam of SET?</label>
+                <select name="set">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>
+                </select>
+                <br>
+            
+            <div> 
+                <h3>SET Details</h3>
+                <label for="yrset">Year of Passing:</label>
+                <input type="number" name="yrset" id="yrset">
+
+                <label for="regset">Registeration Number:</label>
+                <input type="text" name="regset" id="regset">
+
+                <label for="resultset">Result Status:</label>
+                <select name="resultset">
+                    <option val="awa">Awaited</option>
+                    <option val="dec">Declared</option>
+                </select>
+
+                <label for="subset">Subject:</label>
+                <input type="text" name="subset" id="subset">
+                <br><br>
+
+                <label for="rnkset">Rank:</label>
+                <input type="number" name="rnkset" id="rnkset">
+
+                <label for="awdset">Award Agenncy:</label>
+                <input type="text" name="awdset" id="awdset">
+                <br><br><br>
+
+            </div>
+
+            <!--GATE details-->
+            <label for="gate">Have you taken Qualification exam of GATE?</label>
+                <select name="gate">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>
+                </select>
+                <br>
+            
+            <div> 
+                <h3>GATE Details</h3>
+                <label for="yrgate">Year of Passing:</label>
+                <input type="number" name="yrgate" id="yrgate">
+
+                <label for="reggate">Registeration Number:</label>
+                <input type="text" name="reggate" id="reggate">
+
+                <label for="resultgate">Result Status:</label>
+                <select name="resultgate">
+                    <option val="awa">Awaited</option>
+                    <option val="dec">Declared</option>
+                </select>
+
+                <label for="subgate">Subject:</label>
+                <input type="text" name="subgate" id="subgate">
+                <br><br>
+
+                <label for="rnkgate">Rank:</label>
+                <input type="number" name="rnkgate" id="rnkgate">
+
+                <label for="awdgate">Award Agenncy:</label>
+                <input type="text" name="awdgate" id="awdgate">
+                <br><br><br>
+
+            </div>
+
+            <!--SLET details-->
+            <label for="slet">Have you taken Qualification exam of SLET?</label>
+                <select name="slet">
+                    <option value="no">No</option>
+                    <option value="ys">Yes</option>
+                </select>
+                <br>
+            
+            <div> 
+                <h3>SLET Details</h3>
+                <label for="yrslet">Year of Passing:</label>
+                <input type="number" name="yrslet" id="yrslet">
+
+                <label for="regslet">Registeration Number:</label>
+                <input type="text" name="regslet" id="regslet">
+
+                <label for="resultslet">Result Status:</label>
+                <select name="resultslet">
+                    <option val="awa">Awaited</option>
+                    <option val="dec">Declared</option>
+                </select>
+
+                <label for="subslet">Subject:</label>
+                <input type="text" name="subslet" id="subslet">
+                <br><br>
+
+                <label for="rnkslet">Rank:</label>
+                <input type="number" name="rnkslet" id="rnkslet">
+
+                <label for="awdslet">Award Agenncy:</label>
+                <input type="text" name="awdslet" id="awdslet">
+                <br><br><br>
+
+            </div>
+
+            <button type="button" onclick="prevPage(3)">Previous</button>
+            <button type="button" onclick="nextPage(3)">Next</button>
+            <br><br><br>
+        </div>
+
+        <div id="page 4" class="hidden">
+            <h3>Declaration</h3>
+            <ul>
+                <li><h5>I hearby declare that all the Information given by me in this application is true and to        the best of my knowledge and beleif.</h5></li>
+
+                <li><h5>I also note that if any of the above statement are found to be incorrect or false or any        information or particulars have been supressed or omitted therefore, I am liable to disqualified    and my admission would be cancelled.<br>I have read and understood the content of the admission      announcement fro thr various program. I here permit the university to use, display or transfer     any of the details furnished by me the form for complying with the<br>admission formalities,     regulating authority.</h5></li>
+
+                <li><h5>I agree to confirm to the rules and regulations at present in force or that may here        after be made for the admission of the university and its hostels. I am aware that if i found   responsible in any disciplinary issue then<br>the university has full authority to take any      action including expulsion.</h5></li>
+            </ul>
+
+            <label for="apnm">Applicant Name:</label>
+            <input type="text" name="apnm" id="apnm">
+
+            <label for="prnm">Parent Name:</label>
+            <input type="text" name="prnm" id="prnm">
+
+            <label for="apdt">Date:</label>
+            <input type="date" name="apdt" id="apdt">
+
+            <h3>Information</h3>
+            <h5>Dear Applicant<br>You have succesfully filled all the required fields of the apllication form.      Now proceed for online apllication fee payment using credit/debit card, net banking, UPI.<br>For any        help call us at 1800-1020128(toll-free) or 8003897114, 0141-3999100/246/457. Generate a query from     the dashboard for a quick response.</h5>
+
+
+            <button type="button" onclick="prevPage(4)">Previous</button>
+            <button type="submit">Submit</button>
+        </div>
+
+        
+        
+    
+    </form>
+
+    <script>
+        function nextPage(page) {
+          document.getElementById('page ' + page).classList.add("hidden");
+          document.getElementById('page ' + (page + 1)).classList.remove("hidden");
+        }
+    
+        function prevPage(page) {
+          document.getElementById('page ' + page).classList.add("hidden");
+          document.getElementById('page ' + (page - 1)).classList.remove("hidden");
+        }
+      </script>
+    
+</body>
+</html>
