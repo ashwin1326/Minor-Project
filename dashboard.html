@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Admission Dashboard</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="studdash.css"/>
+
+  <style>
+ 
+    .logout {
+      color: red; 
+      display: flex;
+      align-items: center;
+    }
+
+    .logout i {
+      margin-right: 5px; 
+    }
+
+    .content {
+      float: left;
+      width: 70%; 
+      padding: 20px;
+    }
+  </style>
+
+  <script>
+    function loadContent(url) {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          document.getElementById("content").innerHTML = xhr.responseText;
+        }
+      };
+      xhr.open("GET", url, true);
+      xhr.send();
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="logo">
+            <img src="images\MUJ_logo_updated1.jpg" alt="">
+            <span class="nav-item">Student Dashboard</span>
+          </a>
+        </li>
+        <li><a href="#" onclick="loadContent('home.php');" class="btn btn-success">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="#" onclick="loadContent('form.html');" class="btn btn-success">
+          <i class="fas fa-file-alt"></i>
+          <span class="nav-item"> Forms </span>
+        </a></li>
+        <li><a href="#" onclick="loadContent('application_status.php');">
+          <i class="fas fa-list-alt"></i>
+          <span class="nav-item">Application Status</span>
+        </a></li>
+        <li><a href="#" onclick="loadContent('fee.html');" class="btn btn-success">
+          <i class="fas fa-coins"></i>
+          <span class="nav-item">Pay Fees</span>
+        </a></li>
+        <li><a href="#" class="logout" onclick="loadContent('logout.html');">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Log out</span>
+        </a></li> 
+      </ul>
+    </nav>
+
+    <div class="content" id="content">
+
+    </div>
+  </div>
+</body>
+</html>
