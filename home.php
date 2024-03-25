@@ -70,10 +70,7 @@ $mobile_no = "7012136781";
 
     <div class="container">
         <table>
-            <tr>
-                <th>Field</th>
-                <th>Value</th>
-            </tr>
+            
             <tr>
                 <td>Student ID</td>
                 <td><?php echo $student_id; ?></td>
