@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .form-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .form-option {
+            margin: 0 10px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-option img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        .form-option:hover {
+            background-color: white;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>SELECT FORM</h1>
+    <div class="form-options">
+        <a href="src_form.php" class="form-option">
+            <img src="images\google-forms.png" alt="SRC Form">
+            <p>SRC Form</p>
+        </a>
+        <a href="ddc_form.php" class="form-option">
+            <img src="images\google-forms.png" alt="DDC Form">
+            <p>DDC Form</p>
+        </a>
+    </div>
+    <p>Select the form you want to fill out from the options above.</p>
+</body>
+</html>
+
