@@ -1,0 +1,182 @@
+/* Import Google Fonts */
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfe9f5;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a {
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover {
+  background: #eee;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main Section */
+.main {
+  position: relative;
+  padding: 20px;
+  width: calc(100% - 280px); /* Adjusted width */
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between; /* Align icon and heading */
+  align-items: center; /* Vertically align items */
+}
+
+.main-top i {
+  margin: 10px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  margin-top: 20px;
+}
+
+.card {
+  width: calc(25% - 20px); /* Adjusted width */
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card button {
+  background: orangered;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: rgba(223, 70, 15, 0.856);
+}
+
+.card i {
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Fee Payment */
+.fee-payment {
+  margin-top: 20px;
+}
+
+.fee-box {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.fee-box h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.fee-box p {
+  font-size: 14px;
+}
+
+.fee-box button {
+  background: #000;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.fee-box button:hover {
+  background: rgba(0, 0, 0, 0.842);
+}
