@@ -25,9 +25,8 @@ $mobile_no = "7012136781";
         }
 
         .container {
-            max-width: 1500px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width:1500px;
+            padding: 0px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
