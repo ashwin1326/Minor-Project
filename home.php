@@ -1,4 +1,5 @@
 <?php
+
 $student_id = "12";
 $name = "varsha";
 $department = "Computer Science";
@@ -24,7 +25,7 @@ $mobile_no = "7012136781";
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1500px;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
@@ -107,4 +108,3 @@ $mobile_no = "7012136781";
     </div>
 </body>
 </html>
-
